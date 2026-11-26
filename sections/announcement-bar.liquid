@@ -387,32 +387,37 @@
     }
   }
 </style>
+{%- if section.settings.enable_marquee or section.settings.navigation_mode == 'scrolling' -%}
+  <script>
+    if (!window.customElements.get('marquee-text')) {
+      class MarqueeText extends HTMLElement {
+        constructor() {
+          super();
 
-<script>
-  // js/common/ui/marquee-text.js
-  var MarqueeText = class extends HTMLElement {
-    constructor() {
-      super();
-      if (window.ResizeObserver) {
-        new ResizeObserver(this._calculateDuration.bind(this)).observe(this);
+          if (window.ResizeObserver) {
+            new ResizeObserver(this._calculateDuration.bind(this)).observe(this);
+          }
+        }
+
+        _calculateDuration(entries) {
+          const scrollingSpeed = parseInt(this.getAttribute('scrolling-speed') || 5);
+          const contentWidth = entries[0].contentRect.width;
+          const slowFactor = 1 + (Math.min(1600, contentWidth) - 375) / (1600 - 375);
+
+          this.style.setProperty(
+            '--marquee-animation-duration',
+            `${(
+              (scrollingSpeed * slowFactor * entries[0].target.querySelector('span').clientWidth) /
+              contentWidth
+            ).toFixed(3)}s`
+          );
+        }
       }
+
+      window.customElements.define('marquee-text', MarqueeText);
     }
-    _calculateDuration(entries) {
-      const scrollingSpeed = parseInt(this.getAttribute('scrolling-speed') || 5),
-        contentWidth = entries[0].contentRect.width,
-        slowFactor = 1 + (Math.min(1600, contentWidth) - 375) / (1600 - 375);
-      this.style.setProperty(
-        '--marquee-animation-duration',
-        `${((scrollingSpeed * slowFactor * entries[0].target.querySelector('span').clientWidth) / contentWidth).toFixed(
-          3
-        )}s`
-      );
-    }
-  };
-  if (!window.customElements.get('marquee-text')) {
-    window.customElements.define('marquee-text', MarqueeText);
-  }
-</script>
+  </script>
+{%- endif -%}
 
 {% schema %}
 {

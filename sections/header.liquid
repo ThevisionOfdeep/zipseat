@@ -118,7 +118,10 @@
     }
 {%- endstyle -%}
 
-<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+{%- if settings.cart_type == 'notification' -%}
+  <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 {%- liquid
   for block in section.blocks

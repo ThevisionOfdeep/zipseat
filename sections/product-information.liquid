@@ -10,13 +10,24 @@
       <div class="product-information__media-column">
         <div class="product-information__media product-information__media--{{ section.settings.image_ratio }}{% unless section.settings.image %} product-information__media--placeholder{% endunless %}">
           {% if section.settings.image != blank %}
+            {% comment %}
+              {{
+                section.settings.image
+                | image_url: width: 1800
+                | image_tag:
+                  class: 'product-information__image',
+                  widths: '375, 550, 750, 900, 1100, 1400, 1800',
+                  sizes: '(min-width: 1200px) 50vw, 100vw',
+                  loading: 'lazy'
+              }}
+            {% endcomment %}
             {{
               section.settings.image
               | image_url: width: 1800
               | image_tag:
                 class: 'product-information__image',
-                widths: '375, 550, 750, 900, 1100, 1400, 1800',
-                sizes: '(min-width: 1200px) 50vw, 100vw',
+                widths: '375, 550, 600, 750, 900, 1100, 1400, 1800',
+                sizes: '(min-width: 901px) calc((100vw - 80px) / 2), 100vw',
                 loading: 'lazy'
             }}
           {% else %}
