@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_Drpm3A": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_W8zUFM": {
+          "type": "heading",
+          "settings": {
+            "heading": "How to remove stripped seats with the Zip Seat Extractor",
+            "heading_size": "h1"
+          }
+        },
+        "text_GyXiKK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>One of the most common issues we run into when attempting to replace the seats in the Symmons TempTrol Tub / Shower Valves are “STRIPPED SEATS”.  This is typically the result of previous attempts to remove the seats (especially the larger Cold Seat in the front) with the inconsistent fitting hand tools available to preform  this task.  Inside these round seats are notches or receivers, which allows a tool to insert into the notches, engage and lock in - in order to unscrew the seat out. The hand tools available are made off shore with cheap steel which allows their edges to get rounded. The seats are made out of soft brass. This makes it easy to strip the notches out, rounding the inside of the seat and stripping the seat. In many cases the seats can no longer be removed and the valve will need to be replaced.<br/><br/><strong>UNTIL NOW</strong></p><p>The Zip Seat Extractor has successfully removed these stripped seats with  proper procedure.  </p><p>Unlike the hand tools, the Zip Seat Extractor is made with hardened steel for impact strength and resistance to deforming. They’re made with the tightest tolerances and sharpest edges.  </p><p>For this reason, the Zip Seat Extractor can make its own notches in the soft brass seats.</p><p><strong>Step 1</strong> - Try both the Classic Bit (square oriented) and the Evolve Bit (hex oriented) in the seat by hand and spin each one to see if either one will feel like it wants to seat or catch a notch.   </p><p>For partially Stripped Seats<br/><strong>Step 2</strong> - If one seems to fit better than the other, tap it in with a hammer until it feels LOCKED IN. Then insert your 18V impact gun, put it on reverse and lean into the valve while pulling the trigger. Start slow then full power until it breaks free.</p><p>For completely Stripped Seats<br/><strong>Step 3</strong> - If neither Bit wants to grab, we recommend using the Classic Bit.  The square bit has the sharpest edges and will be the easiest to sink into the soft brass stripped seat.  <br/><br/>Tap it in with a hammer until it feels LOCKED IN. Then insert your 18V impact gun, put it on reverse and lean into the valve while pulling the trigger. Start slow then full power until it breaks free.</p><p>If at any point you feel the bit spinning freely in the valve… STOP.  You may be stripping it worse. The bit needs to be tapped in better and you need to put more leverage into the valve while letting the impact gun break it free.</p><p>It’s all basic physics.</p><p>Harden steel will win over soft brass every single time. It will easily sink into the seat making its own notches. Be careful. You don’t need to smash it in. Just tap it in with discretion.</p><p>Applying leverage into the valve will help prevent it from skipping and stripping.</p><p>The action of the impact gun will promote the bit to dig in to the soft brass seat with short bursts of intense torque, grabbing the stripped frozen seat, and ultimately breaking it free.</p><p>Like with any tool, the action and success is based on the discretion, finesse and mechanical ability of the user. This tool is the best chance anyone has to remove frozen seats, as well as stripped seats when proper procedure is taken.</p><p>To date we have had 100% success in removing frozen and stripped seats out of every single valve tested.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_W8zUFM",
+        "text_GyXiKK"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "custom_class": "zip-diverter-instruction",
+        "video_url": "https://youtu.be/66I6tyBjG74?si=HTssn552knuqKRjH",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_Drpm3A"
+  ]
+}

@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_LBn6DC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CgbBEa": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Instructions</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_37drtN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Introducing the Zip Diverter Extractor, a versatile tool specially designed for Symmons diverters. The unique modification allows for easier removal with clockwise threads, ensuring that your impact gun is in the forward position for seamless extraction. This extractor is compatible with both older and newer diverters, making it a convenient solution for various models. Unlike traditional methods, the Zip Diverter Extractor doesn’t rely on suction alone to remove the diverter. Instead, it functions like any other easy-out, with the added benefit of being compatible with an impact gun. This powerful tool provides extra leverage and takes the strain off manual removal, making the process quicker and more efficient.</p><p>The extractor does not exceed a certain size, thereby preventing the over-expansion of the diverter during this process. To successfully remove the diverter, the user should screw in the diverter extractor until it is about halfway secured. Then, while simultaneously pulling the trigger, the user should engage in a gentle rocking motion to facilitate the extraction. With careful execution, the diverter should disengage and be easily removed before reaching the relief groove at the end.</p><p>Many times, the older style diverter will start spinning, which breaks it free even quicker.</p><p>The newer style has a small notch at 10 o’clock on the face preventing it from spinning so it needs to be pulled out straight.</p><p>In either circumstance, if you’re able to pull the diverter out enough to grab it with channel locks, then grab it and pull it the rest of the way out.</p><p>But the key is, once the diverter extractor is locked in, the user needs to be constantly pulling and rocking the gun (using discretion) to pull the diverter out.</p><p>Like with any tool, the user will develop a little finesse with this action, making it simpler each time you use it. If you can get the diverter out with a regular easy out, you should be able to get it out with the Zip Diverter Extractor easier.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CgbBEa",
+        "text_37drtN"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "custom_class": "zip-diverter-instruction",
+        "image": "shopify://shop_images/Frame_3.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_LBn6DC"
+  ]
+}

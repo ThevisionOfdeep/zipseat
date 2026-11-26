@@ -1,0 +1,80 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "link_list_jeW3e8": {
+          "type": "link_list",
+          "settings": {
+            "heading": "SHOP",
+            "menu": "shop"
+          }
+        },
+        "link_list_BYVGkC": {
+          "type": "link_list",
+          "settings": {
+            "heading": "LEARN",
+            "menu": "learn"
+          }
+        },
+        "link_list_company": {
+          "type": "link_list",
+          "settings": {
+            "heading": "COMPANY",
+            "menu": "company"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_jeW3e8",
+        "link_list_BYVGkC",
+        "link_list_company"
+      ],
+      "name": "footer",
+      "settings": {
+        "logo": "shopify://shop_images/ZipSeatNewLogoGradient.png",
+        "logo_width": 220,
+        "show_shop_name": true,
+        "description": "<p>Power tool seat extractors for Symmons temptrol valves. Invented by a master plumber.</p>",
+        "show_social": true,
+        "newsletter_enable": true,
+        "newsletter_heading": "Pro Tips & New Tools Drops",
+        "newsletter_text": "",
+        "email_placeholder": "Enter your email",
+        "newsletter_button": "Subscribe",
+        "show_policy_links": true,
+        "payment_enable": true,
+        "show_developer_credit": true,
+        "developer_prefix": "Design By:",
+        "developer_name": "Thevisiontech",
+        "developer_url": "https://thevisiontech.com/",
+        "copyright_text": "©Copyright [year] Zipseatpro | All Rights Reserved",
+        "background_color": "#050505",
+        "text_color": "#ffffff",
+        "accent_color": "#64b656",
+        "border_color": "#c3c3c3",
+        "content_width": 1660,
+        "top_bottom_spacing": 50,
+        "margin_top": 0,
+        "padding_top": 50,
+        "padding_bottom": 20,
+        "mobile_padding_top": 35,
+        "mobile_padding_bottom": 25
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

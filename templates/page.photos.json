@@ -1,0 +1,152 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "zip_seat_photo_UKGqYX": {
+      "type": "zip-seat-photo",
+      "blocks": {
+        "image_picker_aJKCNj": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/1_b36ef2d4-2951-4800-85a9-3768499e7105.png",
+            "title": "Easy, Quick, & Reliable Rebuilds",
+            "text": "<p>These are actual seats removed in the field with our prototype. Previous attempts to service with other tools on the market stripped the valves, but even they were removed easily with the Zip Seat Extractor.</p>"
+          }
+        },
+        "image_picker_awGU6J": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "title": "Paradigm Shift",
+            "text": "<p>Pays for itself the first time a replacement becomes a rebuild! Allows valves to be rebuilt without cutting the wall. Saves time and effort!</p>"
+          }
+        },
+        "image_picker_n89hfH": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "title": "Predictable Performance",
+            "text": "<p>Never worry about a stripped seat again. Rebuild your valve with predictable speed and performance.</p>"
+          }
+        },
+        "image_picker_QwnnKP": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "title": "New Power Tool Design",
+            "text": "<p>The first power tool on the market for valve rebuilds. The Zip Seat Extractor is a major leap forward.</p>"
+          }
+        },
+        "image_picker_hYVA9V": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/5.png",
+            "title": "Additional Designs",
+            "text": "<p>A&Z is also producing several other tool designs, such as this line of universal faucet removal tools.</p>"
+          }
+        },
+        "image_picker_caTThq": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "title": "1/4 Socket Wrench Design",
+            "text": "<p>For use with any  impact driver, screw gun, or power drill.</p>"
+          }
+        },
+        "image_picker_NYyRMc": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/7.png",
+            "title": "2-in-1 Design",
+            "text": "<p>Hot & cold seats can be removed with the same bit.</p>"
+          }
+        },
+        "image_picker_XjPqPd": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/8.png",
+            "title": "Light and Compact",
+            "text": "<p>153 kg (5.4 oz) 1” x 2.75”</p>"
+          }
+        },
+        "image_picker_W9m9HA": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/005bc4_0aef1ad689e54935a4bb1580d7ba67a1_mv2-300x300.jpg",
+            "title": "Wrench Designs",
+            "text": "<p>Hexagon for current valve models & Square Key for legacy valve models</p>"
+          }
+        },
+        "image_picker_e96DKW": {
+          "type": "image_picker",
+          "settings": {
+            "title": "Evolve Power Wrench Design",
+            "text": "<p>Our hex key power wrench is intended for current Symmons valves, which use a hexagon seat design.</p>"
+          }
+        },
+        "image_picker_QRBzjq": {
+          "type": "image_picker",
+          "settings": {
+            "title": "Classic Power Wrench Design",
+            "text": "<p>Our square key power wrench is intended for older Symmons valves, which use a square key seat design.</p>"
+          }
+        },
+        "image_picker_47jQGX": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/005bc4_f7b4561a8604463b949f53d098d8792c_mv2-300x300.jpg",
+            "title": "Tough and Durable",
+            "text": "<p>Black Oxide coating hardens and protects the tool for life-long use.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_aJKCNj",
+        "image_picker_awGU6J",
+        "image_picker_n89hfH",
+        "image_picker_QwnnKP",
+        "image_picker_hYVA9V",
+        "image_picker_caTThq",
+        "image_picker_NYyRMc",
+        "image_picker_XjPqPd",
+        "image_picker_W9m9HA",
+        "image_picker_e96DKW",
+        "image_picker_QRBzjq",
+        "image_picker_47jQGX"
+      ],
+      "name": "zip-seat-photo",
+      "settings": {
+        "title": "<strong>ZIP SEAT</strong> PHOTOS",
+        "button_label": "",
+        "button_link": "",
+        "button_display": "button",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "image_ratio": "adapt",
+        "show_social_icons": true,
+        "enable_mobile_carousel": false,
+        "border_radius": 10,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "zip_seat_photo_UKGqYX"
+  ]
+}

@@ -1,0 +1,159 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_UzitzQ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_EC4kb3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why is the Zip Seat Extractor more expensive than the other hand tools?",
+            "icon": "none",
+            "row_content": "<p>We spent so much time, effort and energy working on bringing you the finest quality tool money can buy. We’ve taken a task that everyone struggled with completely by hand (usually unsuccessfully) and turned it into an easy to use powered tool task that’s successful every time. Our tool is made with the highest grade of hardened steel that can handle the torque of a heavy duty impact gun. Protected with a black oxide coating, which identifies the tool as impact quality while preventing premature rust. Built with the tightest tolerances and precision that can only be found when “MADE IN THE USA”! Not made in China, Taiwan, or any other offshore manufacturers like other hand tools.</p><p>The kind of tool your grandfather would buy, and would still have in his toolbox today. The kind of tool that you buy once and is backed with a lifetime warranty. You’re not just buying a tool set that consists of 4 separate seat wrenches, for 4 different seats. You’re buying a system that will work as good on the 100th time removing the seats as it did the first time. The sharp edges, which is key to removing the seats (especially stripped ones) will be as sharp 10 years from now as they are today.</p><p>If your tools serve you to make money, it’s a 1 time investment that pays itself off on your very first job. You’ll never say “I wish I didn’t spend that money”. For you business owners, it’s a tax write off. But most importantly, this tool is designed to make your life easier which is priceless.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QGCgPC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why not use the hand tools available to remove the seats?",
+            "icon": "none",
+            "row_content": "<p>First of all, all the hand tools are just that… hand tools. Most difficult tasks have already evolved by progressing from a hand tool to a power tool known as a paradigm shift. A handsaw to power saw, screwdriver to screw gun, hammer and nails to nail gun, and the list goes on. This evolution happens for the obvious reasons of saving time, effort, and energy. In many cases, you are completely unable to achieve the results you’re looking for with only a hand tool.</p><p>This is certainly the case when attempting to remove frozen seats from this exquisite valve. Not only is it difficult to remove them by hand but in most cases, it’s impossible. That’s why most professionals skip plan A (rebuilding the valve) and go right to Plan B (cutting it out and replacing it.) Before the Zip Seat Extractor Power Tool solution, there was no other option but to struggle with the hand tool and hope for the best.</p><p>The second reason you don’t want to use the hand tools available on the market is because they’re made off shore with low grade steel. These tools wear down quickly and round off the corners which end up stripping the seats most of the time. Once the seats are stripped, it’s game over. Your only option is to attempt to use an “EASY OUT” (see “Why shouldn’t I use an easy out.”)</p><p>And finally, in order to remove the seats with the hand tools available you must use a lot of leverage, which distributes torque throughout the soft brass seats, valve, as well as the water pipes tied into it behind the wall. All three of these things are now compromised. Even if successfully removing the seats while exerting the necessary pressure… The valve is compromised and the new seats may not sit right and could leak. In addition to this, the water pipe could break right off in the wall. Not to mention you have now weakened fittings and joints which could show up later as a flood.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UaEyNA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why shouldn’t I use an easy out?",
+            "icon": "none",
+            "row_content": "<p>Many professionals have used an easy out to remove frozen or stripped seats, which is a struggle in itself. When doing this, you are distributing huge amounts of torque through the valves and water pipes that your chances for breaking the pipes have increased a great deal. If they don’t break, they have certainly been compromised and may leak at the joints shortly after. It also expands the soft brass valve body, which the seats screw into. This means if you successfully remove the seats, the new seats may leak either right away or shortly later. Not to mention the struggle of going back to doing this with brute force rather than the effortless process with a powered gun and the Zip Seat Extractor. Better for your valve, your pipes, and your body.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_f3MWfj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Won’t an impact gun be more likely to strip the seats?",
+            "icon": "none",
+            "row_content": "<p>The impact gun encourages these bits to dig in and remove the seats without stripping them.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ef8Yij": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Won't it break my pipes?",
+            "icon": "none",
+            "row_content": "<p>Depending on how well the valve is secured as well as condition and type of tubing connected to the Symmons valve, will determine the level of torque it can handle. Again, when used with an impact gun, the torque gets delivered to the point of contact rather than distributed throughout the valve and piping giving you the best chances possible to not damage the piping connected to the valve. To this point we have NEVER damaged piping while using the Zip Seat Extractor. Like with any tool, we expect the user to exhibit discretion and finesse as needed.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GFFCzm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why shouldn’t I just cut the valve out?",
+            "icon": "none",
+            "row_content": "<p>One of the best things about the Symmons TempTrol valve is the ability to completely rebuild it to virtually a brand new valve, right from the face, without the need to damage the sheet rock, tile, tub surround, etc. Usually the only thing preventing a complete rebuild is the ability to remove the frozen seats, which is exactly what the Zip Seat Extractor was born for. There’s no longer the need to replace your Symmons valve, which comes with a lifetime warranty. In fact, you can completely change the look of your newly rebuilt Symmons valve with dozens of different face plates, handles, showerheads, and tub spout designs with different finishes.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qwY7Cz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will this bit handle the torque of an impact gun?",
+            "icon": "none",
+            "row_content": "<p>Yes! This was a major consideration, when developing the Zip Seat Extractor ZIPSS23 as well as every other tool up and coming in our Zip Seat Extractor line. We took every measure possible, creating the strongest impact quality tool to assure its performance and longevity necessary when using it with an impact gun. The black oxide not only serves as a protective coating to prevent premature rust, it’s also iconic for identifying an impact quality bit.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_PmKmAP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does it take out stripped seats?",
+            "icon": "none",
+            "row_content": "<p>Although the ZSE was not designed specifically to take out stripped seats, we’ve had amazing results with its success. These bits are made with the highest quality hardened steel, and with such precision, the sharp edges only need to catch a small notch in the soft brass seats to cut into the seat, and twist it out.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NCJqmU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long will it take to break the seats free?",
+            "icon": "none",
+            "row_content": "<p>That depends on how frozen and seized the seats are, which is typically based on how long the valve has been in place and the water quality. When used with an 18V impact gun, the seats will typically break free anywhere from five seconds to two minutes.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qVmHiK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What’s the best drill or type of screw gun to use?",
+            "icon": "none",
+            "row_content": "<p>Although, Zip Seat Extractor can be used with any drill, screw gun, or impact driver… we recommend an 18V impact gun to be used for best results. Depending on how frozen and seized your seats are will depend on the amount of torque needed to break free and remove the seats.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_94acmg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will the Zip Seat Extractor process break my drill?",
+            "icon": "none",
+            "row_content": "<p>Again… We highly recommend Zip Seat Extractor to be used with an 18V impact driver. This tool is so strong for the reasons listed above that your drill will break before these bits do. Depending on how frozen the seats are will depend on how much torque is needed to break them free. An 18V impact gun has successfully done the job every single time with even the most frozen seats. Other drills and screw guns have also been successful, but discretion is advised. A drill is typically used for drilling holes and lower impact jobs with little resistance. They’re not designed to rip out seized seats that have been in place for 30 years and require more strength than your drill can offer. A 12V or light duty impact gun will offer more torque application precisely at the point of contact with less concern. But again, may not provide enough to work in certain circumstances. If either of these types of guns are used on the harder to break free seats, and the user keeps the trigger pinned for an extended amount of time while it becomes clear that your particular drill isn’t strong enough, it could damage or even break your drill. You should however, be able to determine this by the way the gun sounds, and is acting before it actually breaks. To this day we have had no reports of broken drills or guns, but as a seasoned mechanic and master plumber for over 30 years, I can see how this could take place under extreme conditions. Like with any tool, we expect the user to use discretion.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_EC4kb3",
+        "collapsible_row_QGCgPC",
+        "collapsible_row_UaEyNA",
+        "collapsible_row_f3MWfj",
+        "collapsible_row_ef8Yij",
+        "collapsible_row_GFFCzm",
+        "collapsible_row_qwY7Cz",
+        "collapsible_row_PmKmAP",
+        "collapsible_row_NCJqmU",
+        "collapsible_row_qVmHiK",
+        "collapsible_row_94acmg"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "heading": "frequently asked questions",
+        "Text": "",
+        "button_label": "",
+        "button_link": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_UzitzQ"
+  ]
+}

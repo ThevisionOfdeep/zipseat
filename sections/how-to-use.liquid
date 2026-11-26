@@ -1,0 +1,131 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="video-with-text section-{{ section.id }}-padding">
+  <div class="video-with-text__container page-width">
+    <div class="video-with-text__content">
+      {% if section.settings.heading != blank %}
+        <h2 class="image-with-text__heading inline-richtext h1">{{ section.settings.heading }}</h2>
+      {% endif %}
+
+      {% if section.settings.text != blank %}
+        <p>{{ section.settings.text }}</p>
+      {% endif %}
+
+      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="button">
+          {{ section.settings.button_label }}
+        </a>
+      {% endif %}
+    </div>
+
+    <div class="video-with-text__media">
+      {% if section.settings.video_url != blank %}
+        {% assign video_url = section.settings.video_url %}
+        {% if video_url contains 'youtube.com/watch?v=' %}
+          {% assign youtube_id = video_url | split: 'v=' | last | split: '&' | first %}
+          {% assign embed_url = 'https://www.youtube.com/embed/' | append: youtube_id %}
+        {% elsif video_url contains 'youtu.be/' %}
+          {% assign youtube_id = video_url | split: '.be/' | last | split: '?' | first %}
+          {% assign embed_url = 'https://www.youtube.com/embed/' | append: youtube_id %}
+        {% elsif video_url contains 'vimeo.com/' %}
+          {% assign vimeo_id = video_url | split: '/' | last | split: '?' | first %}
+          {% assign embed_url = 'https://player.vimeo.com/video/' | append: vimeo_id %}
+        {% endif %}
+
+        {% if embed_url %}
+          <iframe
+            src="{{ embed_url }}"
+            width="560"
+            height="315"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        {% endif %}
+      {% elsif section.settings.video != blank %}
+        {{ section.settings.video | video_tag: controls: true, autoplay: false, muted: false, loop: false }}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Video with Text",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Learn more about our brand, our journey, and what makes us unique."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": "Video URL (YouTube or Vimeo)",
+      "accept": ["youtube", "vimeo"],
+      "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Or upload a video file",
+      "info": "This will override the URL video if both are set."
+    },
+        {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video with Text",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}

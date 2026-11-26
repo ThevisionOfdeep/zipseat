@@ -1,0 +1,430 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_gP7FUG": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_8TVUhK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_2.png",
+            "image_mobile": "shopify://shop_images/Mobile_Banner.png",
+            "image_overlay_opacity": 0,
+            "banner_eyebrow": "SYMMONS TEMPTROL VALVES",
+            "heading": "<p>Fastest way to repair Symmons Shower Valves</p>",
+            "heading_size": "h1",
+            "subheading": "<p>The Zip Seat Extractor is the FIRST EVER power tool attatchment to remove the seats in Symmons Valves.</p>",
+            "button_label": "Shop The Set",
+            "link": "shopify://products/zip-seat-power-tool-extractor-set-for-symmons-temptrol-valves",
+            "button_style_secondary": false,
+            "button_label_2": "How It Works",
+            "link_2": "shopify://pages/instructions",
+            "button_style_secondary_2": true,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "box_align_mobile": "top-center-mobile",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-3"
+          }
+        }
+      },
+      "block_order": [
+        "slide_8TVUhK"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "design_style": "banner_design",
+        "banner_background_color": "#0f1410",
+        "banner_artwork_color": "#ecefea",
+        "banner_accent_color": "#64b656",
+        "banner_grid_color": "#d6d9d3",
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "problem_comparison_7UPKNr": {
+      "type": "problem-comparison",
+      "blocks": {
+        "comparison_w3Yjgk": {
+          "type": "comparison",
+          "settings": {
+            "name": "Hand seat wrench",
+            "detail": "Leverage + easy-out",
+            "time": "15:00+",
+            "bar_width": 100,
+            "bar_color": "#e64642",
+            "text_color": "#e64642"
+          }
+        },
+        "comparison_qwAqLy": {
+          "type": "comparison",
+          "settings": {
+            "name": "Zip Seat + impact",
+            "detail": "18V impact driver",
+            "time": "00:15",
+            "bar_width": 5,
+            "bar_color": "#397D32",
+            "text_color": "#397D32"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_w3Yjgk",
+        "comparison_qwAqLy"
+      ],
+      "name": "Problem comparison",
+      "settings": {
+        "left_label": "The problem",
+        "right_label": "Hand tools vs. Zip Seat",
+        "heading": "Still fighting symmons seats with barbaric hand tools?",
+        "heading_tag": "h1",
+        "description": "<p>Hand seat wrenchers round off, strip soft brass and push torque straight into the plumbing. That’s why so many pros give up on the rebuild and cut the valve out of the wall.</p>",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "comparison_title": "Time to break one seized seat free",
+        "unit_label": "MM : SS",
+        "footer_text": "Typical: badly seized seats can take 5 sec - 2 min with an 18V impact.",
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "video_bRDAnD": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video_url": "https://youtu.be/2geT1akQ78g?si=UCWbuPuERvJCWFZt",
+        "cover_image": "shopify://shop_images/Thumbnail.png",
+        "description": "Zip Seat Extractor VS. Old Hand Tools for the Symmons Valve",
+        "full_width": false,
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "padding_top": 50,
+        "padding_bottom": 100
+      }
+    },
+    "announcement_bar_TTBfcX": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_J4YP9b": {
+          "type": "announcement",
+          "settings": {
+            "text": "Say goodbye to stripped seats",
+            "link": ""
+          }
+        },
+        "announcement_AfpEeL": {
+          "type": "announcement",
+          "settings": {
+            "text": "Turn 15 Minutes into 15 Seconds",
+            "link": ""
+          }
+        },
+        "announcement_EGUqmW": {
+          "type": "announcement",
+          "settings": {
+            "text": "Don’t replace it... Rebuild it!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_J4YP9b",
+        "announcement_AfpEeL",
+        "announcement_EGUqmW"
+      ],
+      "name": "Marquee",
+      "settings": {
+        "enable_marquee": false,
+        "uppercase_text": false,
+        "navigation_mode": "scrolling",
+        "divider_icon": "custom",
+        "custom_divider_image": "shopify://shop_images/Star_6.svg",
+        "marquee_speed": 10,
+        "color_scheme": "scheme-eaa5462a-0831-42d8-aa25-e77573a23a78",
+        "show_line_separator": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "show_social": false
+      }
+    },
+    "seat_instructions_UNd3zK": {
+      "type": "seat-instructions",
+      "blocks": {
+        "instruction_TgrjNQ": {
+          "type": "instruction",
+          "settings": {
+            "icon": "square",
+            "title": "Valve made before 2016",
+            "subtitle": "Square seats",
+            "link": ""
+          }
+        },
+        "instruction_j3FUq7": {
+          "type": "instruction",
+          "settings": {
+            "icon": "hexagon",
+            "title": "Valve 2016 or newer",
+            "subtitle": "Hex seats",
+            "link": ""
+          }
+        },
+        "instruction_BLkC8g": {
+          "type": "instruction",
+          "settings": {
+            "icon": "box",
+            "title": "Full valve rebuild",
+            "subtitle": "Tools & genuine parts",
+            "link": ""
+          }
+        },
+        "instruction_JDj4EQ": {
+          "type": "instruction",
+          "settings": {
+            "icon": "faucet",
+            "title": "Other faucets & valves",
+            "subtitle": "Washer & seat systems",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "instruction_TgrjNQ",
+        "instruction_j3FUq7",
+        "instruction_BLkC8g",
+        "instruction_JDj4EQ"
+      ],
+      "name": "Seat Instructions",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "<p>Square or hex? <em><strong>Pick your valve.</strong></em><br/>We’ll pick the bit.</p>",
+        "link_text": "Seat extractor instructions",
+        "link_url": "shopify://pages/instructions",
+        "accent_color": "#64b656",
+        "card_background": "#101410",
+        "card_border": "#2f3330",
+        "secondary_text_color": "#969a96",
+        "divider_color": "#555555",
+        "show_divider": true,
+        "content_width": 1660,
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "featured_collection_Y7DVtR": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "title": "Zip Seat <em>Products</em>&nbsp;",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-3",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "icon",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 44
+      }
+    },
+    "zip_seat_photo_ThExe9": {
+      "type": "zip-seat-photo",
+      "blocks": {
+        "image_picker_G3WXVf": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/1_b36ef2d4-2951-4800-85a9-3768499e7105.png",
+            "title": "Easy, Quick, & Reliable Rebuilds",
+            "text": "<p>These are actual seats removed in the field with our prototype. Previous attempts to service with other tools on the market stripped the valves, but even they were removed easily with the Zip Seat Extractor.</p>"
+          }
+        },
+        "image_picker_A4dqVC": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "title": "Paradigm Shift",
+            "text": "<p>Pays for itself the first time a replacement becomes a rebuild! Allows valves to be rebuilt without cutting the wall. Saves time and effort!</p>"
+          }
+        },
+        "image_picker_3VEzVL": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "title": "Predictable Performance",
+            "text": "<p>Never worry about a stripped seat again. Rebuild your valve with predictable speed and performance.</p>"
+          }
+        },
+        "image_picker_xy3zdi": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "title": "New Power Tool Design",
+            "text": "<p>The first power tool on the market for valve rebuilds. The Zip Seat Extractor is a major leap forward.</p>"
+          }
+        },
+        "image_picker_HfaFUC": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/5.png",
+            "title": "Additional Designs",
+            "text": "<p>A&Z is also producing several other tool designs, such as this line of universal faucet removal tools.</p>"
+          }
+        },
+        "image_picker_edRCBx": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "title": "1/4 Socket Wrench Design",
+            "text": "<p>For use with any  impact driver, screw gun, or power drill.</p>"
+          }
+        },
+        "image_picker_QpbTid": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/7.png",
+            "title": "2-in-1 Design",
+            "text": "<p>Hot & cold seats can be removed with the same bit.</p>"
+          }
+        },
+        "image_picker_PEeLDb": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/8.png",
+            "title": "Light and Compact",
+            "text": "<p>153 kg (5.4 oz) 1” x 2.75”</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_G3WXVf",
+        "image_picker_A4dqVC",
+        "image_picker_3VEzVL",
+        "image_picker_xy3zdi",
+        "image_picker_HfaFUC",
+        "image_picker_edRCBx",
+        "image_picker_QpbTid",
+        "image_picker_PEeLDb"
+      ],
+      "name": "zip-seat-photo",
+      "settings": {
+        "title": "Real Projects. <em><strong>Remarkable Results.</strong></em><strong>&nbsp;</strong>",
+        "button_label": "View Our Work",
+        "button_link": "shopify://pages/photos",
+        "button_display": "link",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "image_ratio": "square",
+        "show_social_icons": false,
+        "enable_mobile_carousel": true,
+        "border_radius": 0,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "product_information_ymV7nh": {
+      "type": "product-information",
+      "name": "Product Information",
+      "settings": {
+        "heading": "<p>Rebuild Your Symmons <em>Temptrol the Right Way.</em></p>",
+        "description": "<p>The kind of tool you buy once and still find in the toolbox twenty years from now.</p>",
+        "button_label": "Shop Symmons® Temptrol Rebuild Kit",
+        "button_product": "symmons-temptrol-rebuild-kit",
+        "image": "shopify://shop_images/Rectangle_23.png",
+        "image_ratio": "square",
+        "color_scheme": ""
+      }
+    },
+    "1787591626f4b11f5b": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_cards_carousel_jkFFD8": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": false,
+            "reviews_selection": "all",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "Selected for widget display",
+            "star_rating": "all",
+            "show_review_media": false,
+            "display_order": "media_first",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "small",
+            "text_size": "medium",
+            "image_ratio": "1",
+            "reviews_shown": 3,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "sides",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#f9f9f9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "",
+            "show_average_rating": true,
+            "rating_display": "show_nothing"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_cards_carousel_jkFFD8"
+      ],
+      "settings": {
+        "include_margins": true,
+        "title": "Customers <em>Are Saying</em>",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "slideshow_gP7FUG",
+    "problem_comparison_7UPKNr",
+    "video_bRDAnD",
+    "announcement_bar_TTBfcX",
+    "seat_instructions_UNd3zK",
+    "featured_collection_Y7DVtR",
+    "zip_seat_photo_ThExe9",
+    "product_information_ymV7nh",
+    "1787591626f4b11f5b"
+  ]
+}

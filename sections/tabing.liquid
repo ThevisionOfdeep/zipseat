@@ -1,0 +1,179 @@
+{%style %}
+    .policies_wrap .section-blocks__heading{
+    font-size: 50px;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 1600px){
+    .policies_wrap .section-blocks__heading{
+      font-size: 40px;
+    }
+  }
+    @media screen and (max-width: 1440px){
+    .policies_wrap .section-blocks__heading{
+      font-size: 36px;
+    }
+  }
+    @media screen and (max-width: 989px){
+    .policies_wrap .section-blocks__heading{
+      font-size: 30px;
+    }
+  }
+   @media screen and (max-width: 449px){
+    .policies_wrap .section-blocks__heading{
+      font-size: 25px;
+    }
+  }
+{% endstyle %}
+
+
+<div class="section color-{{ section.settings.color_scheme }}">
+  <div class="policies_wrap">
+    <div class="page-width">
+      <div class="policies_content"
+      style="display: inline-block;">
+        <div class="policies_heading">
+          <h2 class="h1 section-blocks__heading">
+            {{ section.settings.title }}
+          </h2>
+          <div class="policies-tabs">
+            {% for block in section.blocks %}
+              <a
+                href="#{{ block.settings.polices.title | handle }}"
+                class="policies__tab-button{% if forloop.first %} active{% endif %}"
+                data-tab="{{ block.settings.polices.title | handle }}"
+              >
+                {% if block.settings.tab_title != blank %}
+                  {{ block.settings.tab_title }}
+                {% elsif block.settings.polices and block.settings.polices.title != blank %}
+                  {{ block.settings.polices.title }}
+                {% endif %}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="policies-content">
+          {% for block in section.blocks %}
+            <div
+              class="policies__tab-content{% if forloop.first %} active{% endif %}"
+              id="{{ block.settings.polices.title | handle }}"
+            >
+              <div class="policies-text">
+                {% if block.settings.polices.content != blank %}
+                  <div class="defualt_content">
+                    {{ block.settings.polices.content }}
+                  </div>
+                {% endif %}
+                {% if block.settings.tab_content != blank %}
+                  <div>{{ block.settings.tab_content }}</div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabLinks = document.querySelectorAll('.policies__tab-button');
+    const tabContents = document.querySelectorAll('.policies__tab-content');
+
+    function activateTab(tabId) {
+      tabLinks.forEach((link) => link.classList.remove('active'));
+      tabContents.forEach((content) => content.classList.remove('active'));
+
+      const activeLink = document.querySelector(`.policies__tab-button[href="#${tabId}"]`);
+      const activeContent = document.getElementById(tabId);
+
+      if (activeLink && activeContent) {
+        activeLink.classList.add('active');
+        activeContent.classList.add('active');
+      }
+    }
+
+    tabLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const tabId = link.getAttribute('href').substring(1);
+        activateTab(tabId);
+        history.pushState(null, null, `#${tabId}`);
+      });
+    });
+
+    // Activate tab from URL hash on page load
+    const currentHash = window.location.hash.substring(1);
+    if (currentHash) {
+      activateTab(currentHash);
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Tabination",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "Featured Tabs"
+    },
+    {
+      "type": "richtext",
+      "id": "title_info",
+      "label": "Heading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "page",
+          "id": "polices",
+          "label": "Page"
+        },
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title",
+          "default": "Tab Title"
+        },
+        {
+          "type": "richtext",
+          "id": "tab_content",
+          "label": "Tab Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tabination"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .policies__tab-button.active {
+      background-color: #333;
+      color: white;
+  }
+  .policies__tab-content {
+      display: none;
+  }
+
+  .policies__tab-content.active {
+      display: block;
+  }
+</style>

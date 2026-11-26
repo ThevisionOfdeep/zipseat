@@ -1,0 +1,511 @@
+{%- style -%}
+          .seat-instructions-{{ section.id }}{
+          background: rgb(var(--color-background));
+          color: rgb(var(--color-foreground));
+          padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+          padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+        }
+
+          .seat-instructions__inner {
+          width: 100%;
+          max-width: {{ section.settings.content_width }}px;
+          margin: 0 auto;
+          border-bottom: 1px solid #5E5E5E;
+          padding-bottom: 100px;
+        }
+
+          .seat-instructions__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          gap: 40px;
+          margin-bottom: 60px;
+        }
+
+          .seat-instructions__heading {
+          max-width: 850px;
+          margin: 0;
+          font-size: 50px;
+          line-height: 1.4;
+          letter-spacing: 0;
+          font-weight: 600;
+          overflow-wrap: break-word;
+        }
+
+          .seat-instructions__heading-accent {
+          color: {{ section.settings.accent_color }};
+          font-style: italic;
+        }
+
+          .seat-instructions__heading-line {
+          display: block;
+        }
+
+          .seat-instructions__cta {
+          flex: 0 0 auto;
+          color: rgb(var(--color-foreground));
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 20px;
+          letter-spacing: .015em;
+          border-bottom: 1px solid currentColor;
+          transition: color .2s ease;
+          line-height: 1.5;
+          margin-bottom: -10px;
+          text-align: right;
+        }
+
+          .seat-instructions__cta:hover {
+          color: {{ section.settings.accent_color }};
+        }
+
+          .seat-instructions__grid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 20px;
+        }
+
+          .seat-instructions__card {
+          min-width: 0;
+          min-height: 202px;
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background: {{ section.settings.card_background }};
+          outline: 1px solid {{ section.settings.card_border }};
+          color: rgb(var(--color-foreground));
+          text-decoration: none;
+          transition: border-color .2s ease, transform .2s ease, background .2s ease;
+        }
+
+          a.seat-instructions__card:hover {
+          border-color: {{ section.settings.accent_color }};
+          transform: translateY(-3px);
+        }
+
+          .seat-instructions__icon {
+          width: 60px;
+          height: 60px;
+          flex: 0 0 60px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          color: {{ section.settings.accent_color }};
+        }
+
+          .seat-instructions__icon svg,
+          .seat-instructions__icon-image {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+
+          .seat-instructions__icon svg {
+          fill: none;
+          stroke: currentColor;
+          stroke-width: 1.7;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+
+          .seat-instructions__card-copy {
+          min-width: 0;
+        }
+
+          .seat-instructions__card-title {
+          margin: 0 0 8px;
+          font-size: 20px;
+          letter-spacing: 0;
+          font-weight: 600;
+          line-height: 1.25;
+          overflow-wrap: break-word;
+        }
+
+          .seat-instructions__card-subtitle {
+          margin: 0;
+          color: {{ section.settings.secondary_text_color }};
+          font-size: 12px;
+          line-height: 1.4;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          overflow-wrap: break-word;
+        }
+
+          .seat-instructions__divider {
+          height: 1px;
+          width: 100%;
+          margin-top: 100px;
+          background: {{ section.settings.divider_color }};
+        }
+        .seat-instructions__heading em{
+            color: {{ section.settings.accent_color }};
+        }
+        @media screen and (min-width: 750px) {
+            .seat-instructions-{{ section.id }}{
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+          }
+        }
+      @media (min-width: 1440px) and (max-width: 1600px) {
+        .seat-instructions__card{
+              min-height: 190px;
+              padding: 22px;
+        }
+        .seat-instructions__card-title {
+        margin: 0 0 6px;
+        font-size: 18px;
+        }
+  .seat-instructions__icon {
+      width: 55px;
+      height: 55px;
+  }
+  .seat-instructions__inner {
+    padding-bottom: 80px;
+  }
+    .seat-instructions__card-subtitle {
+      font-size: 11px
+    }
+        .seat-instructions__heading {
+            font-size: 40px;
+          }
+           .seat-instructions__cta{
+            font-size: 16px;
+          }
+          .seat-instructions__header{
+            margin-bottom: 55px;
+          }
+      }
+        @media screen and (max-width: 1440px) {
+          .seat-instructions-{{ section.id }}{
+            padding-bottom: 25px;
+          }
+            .seat-instructions__heading {
+            font-size: 38px;
+            line-height: 1.32;
+          }
+
+            .seat-instructions__inner {
+            max-width: 100%;
+            padding-bottom: 50px;
+          }
+
+            .seat-instructions__header {
+            margin-bottom: 40px;
+          }
+
+        }
+
+        @media (min-width: 1200px) and (max-width: 1400px){
+          .seat-instructions__heading{
+            font-size: 36px;
+          }
+            .seat-instructions__cta{
+            font-size: 16px;
+          }
+        }
+        @media (min-width: 989px) and (max-width: 1200px){
+            .seat-instructions__heading{
+            font-size: 36px;
+          }
+        }
+        @media screen and (max-width: 1100px) {
+            .seat-instructions__grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+            .seat-instructions__card {
+            min-height: 190px;
+          }
+
+        }
+
+        @media screen and (max-width: 989px) {
+            .seat-instructions__heading {
+            font-size: 30px;
+            line-height: 1.2;
+          }
+
+            .seat-instructions__cta {
+            font-size: 16px;
+          }
+
+            .seat-instructions__header {
+
+            gap: 24px;
+          }
+        }
+
+        @media screen and (max-width: 749px) {
+            .seat-instructions__inner {
+            width: 100%;
+            padding-bottom: 35px;
+          }
+
+            .seat-instructions__header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 22px;
+            margin-bottom: 28px;
+          }
+
+            .seat-instructions__heading {
+            font-size: 30px;
+            line-height: 1.2;
+          }
+
+            .seat-instructions__cta {
+            font-size: 14px;
+            margin-bottom: 0;
+            text-align: left;
+          }
+
+            .seat-instructions__grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+          }
+
+            .seat-instructions__card {
+            min-height: 178px;
+            padding: 22px;
+          }
+
+            .seat-instructions__card-title {
+            font-size: 18px;
+          }
+
+            .seat-instructions__divider {
+            margin-top: 54px;
+          }
+        }
+
+        @media screen and (max-width: 589px) {
+            .seat-instructions__grid {
+            grid-template-columns: 1fr;
+            gap: 12px;
+          }
+
+            .seat-instructions__card {
+            min-height: 160px;
+          }
+        }
+
+        @media screen and (max-width: 449px) {
+            {
+            padding-bottom: 25px;
+          }
+
+            .seat-instructions__heading {
+            font-size: 24px;
+            line-height: 1.2;
+          }
+
+            .seat-instructions__heading-line {
+            display: inline;
+          }
+
+            .seat-instructions__heading-line + .seat-instructions__heading-line {
+            display: block;
+            margin-top: 2px;
+          }
+
+            .seat-instructions__card {
+            padding: 20px;
+          }
+        }
+{%- endstyle -%}
+
+<section class="seat-instructions-{{ section.id }} color-{{ section.settings.color_scheme }}">
+  <div class="page-width">
+    <div class="seat-instructions__inner">
+      <div class="seat-instructions__header">
+        {% comment %}
+          <h2 class="seat-instructions__heading">
+            <span class="seat-instructions__heading-line">
+              {{ section.settings.heading_first | escape }}
+              <span class="seat-instructions__heading-accent">{{ section.settings.heading_highlight | escape }}</span>
+            </span>
+            <span class="seat-instructions__heading-line">{{ section.settings.heading_second | escape }}</span>
+          </h2>
+        {% endcomment %}
+        <h2 class="seat-instructions__heading rte" role="heading" aria-level="2">
+          {{ section.settings.heading }}
+        </h2>
+        {%- if section.settings.link_text != blank and section.settings.link_url != blank -%}
+          <a class="seat-instructions__cta" href="{{ section.settings.link_url }}">
+            {{ section.settings.link_text | escape }}
+          </a>
+        {%- endif -%}
+      </div>
+
+      <div class="seat-instructions__grid">
+        {%- for block in section.blocks -%}
+          {%- assign card_url = block.settings.link -%}
+          {%- if card_url != blank -%}
+            <a class="seat-instructions__card" href="{{ card_url }}" {{ block.shopify_attributes }}>
+          {%- else -%}
+            <div class="seat-instructions__card" {{ block.shopify_attributes }}>
+          {%- endif -%}
+          <span class="seat-instructions__icon" aria-hidden="true">
+            {%- case block.settings.icon -%}
+              {%- when 'square' -%}
+                <img
+                  src="{{ 'icons-seat-card1.svg' | asset_url }}"
+                  alt="{{ block.settings.title | escape }}"
+                  class="seat-instructions__icon-image"
+                  loading="lazy"
+                  width="60"
+                  height="60"
+                >
+              {%- when 'hexagon' -%}
+                <img
+                  src="{{ 'icons-seat-card2.svg' | asset_url }}"
+                  alt="{{ block.settings.title | escape }}"
+                  class="seat-instructions__icon-image"
+                  loading="lazy"
+                  width="60"
+                  height="60"
+                >
+              {%- when 'box' -%}
+                <img
+                  src="{{ 'icons-seat-card3.svg' | asset_url }}"
+                  alt="{{ block.settings.title | escape }}"
+                  class="seat-instructions__icon-image"
+                  loading="lazy"
+                  width="60"
+                  height="60"
+                >
+              {%- when 'faucet' -%}
+                <img
+                  src="{{ 'icons-seat-card4.svg' | asset_url }}"
+                  alt="{{ block.settings.title | escape }}"
+                  class="seat-instructions__icon-image"
+                  loading="lazy"
+                  width="60"
+                  height="60"
+                >
+            {%- endcase -%}
+          </span>
+          <div class="seat-instructions__card-copy">
+            {%- if block.settings.title != blank -%}
+              <h3 class="seat-instructions__card-title">{{ block.settings.title | escape }}</h3>
+            {%- endif -%}
+            {%- if block.settings.subtitle != blank -%}
+              <p class="seat-instructions__card-subtitle">{{ block.settings.subtitle | escape }}</p>
+            {%- endif -%}
+          </div>
+          {%- if card_url != blank -%}
+            </a>
+          {%- else -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      {%- if section.settings.show_divider -%}
+        <div class="seat-instructions__divider"></div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Seat Instructions",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "instruction",
+      "name": "Instruction card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "square", "label": "Square seat" },
+            { "value": "hexagon", "label": "Hex seat" },
+            { "value": "box", "label": "Rebuild / tools" },
+            { "value": "faucet", "label": "Faucet" }
+          ],
+          "default": "square"
+        },
+        { "type": "text", "id": "title", "label": "Card heading", "default": "Valve made before 2016" },
+        { "type": "text", "id": "subtitle", "label": "Card supporting text", "default": "Square seats" },
+        { "type": "url", "id": "link", "label": "Card link" }
+      ]
+    }
+  ],
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Square or hex? <em>Pick your valve.</em><br>We’ll pick the bit.</p>"
+    },
+    { "type": "text", "id": "link_text", "label": "Top link text", "default": "Seat extractor instructions" },
+    { "type": "url", "id": "link_url", "label": "Top link URL" },
+    { "type": "color", "id": "accent_color", "label": "Accent color", "default": "#65B64E" },
+    { "type": "color", "id": "card_background", "label": "Card background", "default": "#101410" },
+    { "type": "color", "id": "card_border", "label": "Card border", "default": "#303630" },
+    { "type": "color", "id": "secondary_text_color", "label": "Card supporting text color", "default": "#969A96" },
+    { "type": "color", "id": "divider_color", "label": "Bottom divider color", "default": "#555555" },
+    { "type": "checkbox", "id": "show_divider", "label": "Show bottom divider", "default": true },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 1000,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Content width",
+      "default": 1660
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Seat Instructions",
+      "blocks": [
+        {
+          "type": "instruction",
+          "settings": { "icon": "square", "title": "Valve made before 2016", "subtitle": "Square seats" }
+        },
+        {
+          "type": "instruction",
+          "settings": { "icon": "hexagon", "title": "Valve 2016 or newer", "subtitle": "Hex seats" }
+        },
+        {
+          "type": "instruction",
+          "settings": { "icon": "box", "title": "Full valve rebuild", "subtitle": "Tools & genuine parts" }
+        },
+        {
+          "type": "instruction",
+          "settings": { "icon": "faucet", "title": "Other faucets & valves", "subtitle": "Washer & seat systems" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

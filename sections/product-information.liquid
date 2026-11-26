@@ -1,0 +1,173 @@
+{% comment %}
+  Product Information
+  Recreated from Figma frame: Product Information (12:322)
+{% endcomment %}
+
+{{ 'product-information.css' | asset_url | stylesheet_tag }}
+<section class="product-information color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    <div class="product-information__inner">
+      <div class="product-information__media-column">
+        <div class="product-information__media product-information__media--{{ section.settings.image_ratio }}{% unless section.settings.image %} product-information__media--placeholder{% endunless %}">
+          {% if section.settings.image != blank %}
+            {{
+              section.settings.image
+              | image_url: width: 1800
+              | image_tag:
+                class: 'product-information__image',
+                widths: '375, 550, 750, 900, 1100, 1400, 1800',
+                sizes: '(min-width: 1200px) 50vw, 100vw',
+                loading: 'lazy'
+            }}
+          {% else %}
+            <div class="product-information__placeholder" aria-label="Image placeholder">
+              <svg viewBox="0 0 120 120" role="img" aria-hidden="true">
+                <rect x="13" y="18" width="94" height="84" rx="4" fill="none" stroke="currentColor" stroke-width="3"/>
+                <circle cx="42" cy="45" r="9" fill="none" stroke="currentColor" stroke-width="3"/>
+                <path d="M18 91 49 62l17 16 13-12 23 25" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          {% endif %}
+
+          <div class="product-information__origin">
+            <img
+              src="{{ 'united-states.svg' | asset_url }}"
+              class="product-information__flag"
+              alt="US Flag"
+              width="20"
+              height="20"
+              loading="lazy"
+            >
+            <span>Made in USA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-information__content">
+        {% if section.settings.heading != blank %}
+          <h2 class="product-information__heading">
+            {{ section.settings.heading }}
+          </h2>
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          <div class="product-information__description rte">
+            {{ section.settings.description }}
+          </div>
+        {% endif %}
+
+        <div class="product-information__top-divider" aria-hidden="true"></div>
+
+        <div class="product-information__specifications">
+          <div class="product-information__spec-row">
+            <span class="product-information__spec-label">MATERIAL</span>
+            <span class="product-information__spec-value">Hardened, professional-grade tool steel</span>
+          </div>
+          <div class="product-information__spec-row">
+            <span class="product-information__spec-label">FINISH</span>
+            <span class="product-information__spec-value">Black oxide - impact-rated, Rust-resistant</span>
+          </div>
+          <div class="product-information__spec-row">
+            <span class="product-information__spec-label">DRIVE</span>
+            <span class="product-information__spec-value">1/4” impact speed bit - 18v impact recommended</span>
+          </div>
+          <div class="product-information__spec-row">
+            <span class="product-information__spec-label">DESIGN</span>
+            <span class="product-information__spec-value">Dual-acting: hot + cold wrench in every bit</span>
+          </div>
+          <div class="product-information__spec-row">
+            <span class="product-information__spec-label">FORCE PATH</span>
+            <span class="product-information__spec-value">Point of contact never through the pipes</span>
+          </div>
+
+          <div class="product-information__warranty">
+            <span class="product-information__spec-label">WARRANTY</span>
+            <span class="product-information__warranty-value">LIFETIME</span>
+          </div>
+        </div>
+
+        {% if section.settings.button_label != blank %}
+          {% assign button_product = section.settings.button_product | default: product %}
+          <a
+            class="product-information__button"
+            href="{{ button_product.url | default: routes.root_url }}"
+          >
+            {{ section.settings.button_label | escape }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Product Information",
+  "tag": "section",
+  "class": "section-product-information",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Rebuild Your Symmons <em>Temptrol the Right Way.</em></p>"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>The kind of tool you buy once and still find in the toolbox twenty years from now.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop Symmons® Temptrol Rebuild Kit"
+    },
+    {
+      "type": "product",
+      "id": "button_product",
+      "label": "Button product"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Image size",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "Adapt to image"
+        },
+        {
+          "value": "square",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "portrait",
+          "label": "Portrait (3:4)"
+        },
+        {
+          "value": "landscape",
+          "label": "Landscape (4:3)"
+        }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Information"
+    }
+  ]
+}
+{% endschema %}

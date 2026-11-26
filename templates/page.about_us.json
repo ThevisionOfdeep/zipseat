@@ -1,0 +1,150 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_cRLbjy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JnDFUr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_Vxb3dz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_3hearz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JnDFUr",
+        "text_Vxb3dz",
+        "button_3hearz"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "custom_class": "custom class",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_j3Qr7m": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_MJMpKC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/about-desktop.png",
+            "image_mobile": "shopify://shop_images/about-mobile.png",
+            "image_overlay_opacity": 0,
+            "banner_eyebrow": "",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "link_2": "",
+            "button_style_secondary_2": true,
+            "show_text_box": false,
+            "box_align": "middle-right",
+            "box_align_mobile": "top-center-mobile",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_MJMpKC"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "design_style": "standard",
+        "banner_background_color": "#0f1410",
+        "banner_artwork_color": "#ecefea",
+        "banner_accent_color": "#64b656",
+        "banner_grid_color": "#d6d9d3",
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_XMYVNU": {
+      "type": "rich-text",
+      "blocks": {
+        "text_b8fyWV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At A and Z World, we’re revolutionizing the way plumbers and homeowners rebuild <strong>Symmons shower valves</strong>. For decades, the old hand tools used for seat removal were slow, frustrating, and risky—often putting dangerous pressure on the pipes behind the wall. After years of dealing with that exact problem, <strong>master plumber Zach Zufelt</strong> decided enough was enough. He invented the <strong>Zip Seat Extractor</strong>, the first-ever <strong>power tool attachment</strong> designed specifically to remove and replace Symmons valve seats quickly, safely, and effortlessly.</p><p>What started as a simple idea in a Massachusetts workshop has become a <strong>game-changing innovation</strong> trusted by thousands of plumbers nationwide. The Zip Seat Extractor was <strong>beta tested in the field for six years</strong> with a 100% success rate before officially launching to the market. Today, it’s the <strong>go-to tool</strong> for professionals and DIYers alike who want to rebuild their Symmons Temptrol valves the right way—without risking damage to the plumbing system.</p><p>Proudly <strong>made in the USA</strong>, every Zip Seat Extractor is built from <strong>precision-machined, professional-grade steel</strong> with a black oxide coating for superior durability and performance. Its <strong>dual-acting bit</strong> design allows users to remove both the hot and cold valve seats with one tool, saving time and effort on every job. The <strong>impact-driven torque</strong> applies force directly at the point of contact—never through the pipes—making it the safest and most efficient way to rebuild a Symmons valve.</p><p>Whether you’re a <strong>licensed plumber</strong>, a <strong>maintenance professional</strong>, or a <strong>hands-on homeowner</strong>, the Zip Seat Extractor gives you the confidence to get the job done fast and right the first time. No more stripped seats, broken tools, or cracked pipes—just clean, easy valve rebuilds that restore water flow and performance in minutes.</p><p>Our mission is simple: to make <strong>plumbing innovation accessible to everyone</strong>. By combining real-world trade experience with smart engineering, we’ve created a tool that doesn’t just improve a process—it <strong>changes the industry standard</strong>.</p><p>Join the growing community of professionals who have made the switch and never looked back. Experience why plumbers across America say the Zip Seat Extractor is “<strong>the tool that should have existed decades ago</strong>.”</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_b8fyWV"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_class": "About_us",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_cRLbjy",
+    "slideshow_j3Qr7m",
+    "rich_text_XMYVNU"
+  ]
+}

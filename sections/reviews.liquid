@@ -1,0 +1,372 @@
+{% comment %}
+  Testimonial Slider Section
+  Pixel-perfect, responsive, and dynamic
+{% endcomment %}
+<section class="testimonial-section">
+  <div class="testimonial-container page-width">
+    <div class="testimonial-header">
+      <div class="quote-icon"> 
+        <svg width="78" height="60" viewBox="0 0 78 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M34.125 26.4V60H0V25.92C0 2.88 21.9375 0 21.9375 0L24.8625 6.72C24.8625 6.72 15.1125 8.16 13.1625 15.84C11.2125 21.6 15.1125 26.4 15.1125 26.4H34.125ZM78 26.4V60H43.875V25.92C43.875 2.88 65.8125 0 65.8125 0L68.7375 6.72C68.7375 6.72 58.9875 8.16 57.0375 15.84C55.0875 21.6 58.9875 26.4 58.9875 26.4H78Z" fill="#C4C0C8"/>
+        </svg>
+      </div>
+      <div class="testimonial-title">
+        <span class="h1">
+          {{ section.settings.title | default: 'Testimonials' }}
+        </span>
+      </div>
+      <div class="testimonial-nav">
+        <button class="arrow prev" aria-label="Previous">
+          <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M30.7071 8.07088C31.0976 7.68035 31.0976 7.04719 30.7071 6.65666L24.3431 0.292702C23.9526 -0.0978227 23.3195 -0.0978227 22.9289 0.292702C22.5384 0.683226 22.5384 1.31639 22.9289 1.70692L28.5858 7.36377L22.9289 13.0206C22.5384 13.4111 22.5384 14.0443 22.9289 14.4348C23.3195 14.8254 23.9526 14.8254 24.3431 14.4348L30.7071 8.07088ZM0 7.36377V8.36377H30V7.36377V6.36377H0V7.36377Z" fill="black"/>
+          </svg>
+        </button>
+        <div class="progress-bar">
+            <div class="progress"><span style="opacity:0;">•</span></div>
+        </div>
+        <button class="arrow next" aria-label="Next">
+          <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30.7071 8.07088C31.0976 7.68035 31.0976 7.04719 30.7071 6.65666L24.3431 0.292702C23.9526 -0.0978227 23.3195 -0.0978227 22.9289 0.292702C22.5384 0.683226 22.5384 1.31639 22.9289 1.70692L28.5858 7.36377L22.9289 13.0206C22.5384 13.4111 22.5384 14.0443 22.9289 14.4348C23.3195 14.8254 23.9526 14.8254 24.3431 14.4348L30.7071 8.07088ZM0 7.36377V8.36377H30V7.36377V6.36377H0V7.36377Z" fill="black"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+ 
+    <div class="testimonial-slider">
+      {% for block in section.blocks %}
+        <div class="testimonial-card">
+          <div class="stars">
+            {% for i in (1..5) %}
+              <span class="star">
+                
+                  <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.38586 0.691212C8.68521 -0.230099 9.98862 -0.2301 10.288 0.691211L11.8066 5.36497C11.9404 5.777 12.3244 6.05596 12.7576 6.05596H17.6719C18.6406 6.05596 19.0434 7.29557 18.2597 7.86497L14.284 10.7535C13.9335 11.0082 13.7868 11.4595 13.9207 11.8716L15.4393 16.5453C15.7386 17.4666 14.6842 18.2327 13.9004 17.6633L9.9247 14.7748C9.57421 14.5202 9.09962 14.5202 8.74913 14.7748L4.77339 17.6633C3.98968 18.2327 2.9352 17.4666 3.23455 16.5453L4.75314 11.8716C4.88702 11.4595 4.74036 11.0082 4.38987 10.7535L0.414135 7.86497C-0.369579 7.29557 0.0331967 6.05596 1.00192 6.05596H5.9162C6.34943 6.05596 6.73339 5.777 6.86726 5.36497L8.38586 0.691212Z" fill="currentColor"/>
+                  </svg>
+
+              </span>
+            {% endfor %}
+          </div>
+          <p class="date">{{ block.settings.date }}</p>
+          <p class="content">{{ block.settings.text }}</p>
+          <p class="author">{{ block.settings.name }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+ 
+<style>
+/* === Testimonial Section Base === */
+.testimonial-section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: unset;
+  padding-inline: calc((100% - 1660px) / 2) 0;
+}
+
+/* === Header === */
+.testimonial-header {
+  flex: 0 0 22%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial-title h2,
+.testimonial-title .h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.testimonial-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.testimonial-nav .arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+.testimonial-nav .arrow svg path {
+  fill: #fff;
+}
+
+.testimonial-nav button.arrow.prev {
+  transform: rotate(180deg);
+}
+
+.progress-bar {
+  flex: 1;
+  height: 2px;
+  background: #e0e0e0;
+  position: relative;
+}
+
+.progress-bar .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  background: #000;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+/* === Slider === */
+.testimonial-slider {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  touch-action: pan-x pan-y;
+  cursor: grab;
+  user-select: text; /* allow text selection */
+  padding: 10px;
+  margin: -10px;
+  overscroll-behavior-inline: contain;
+}
+
+.testimonial-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-slider.dragging {
+  cursor: grabbing;
+  user-select: none; /* disable selection only while dragging */
+}
+
+/* === Cards === */
+.testimonial-card {
+  flex: 0 0 370px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #00000010;
+}
+
+.testimonial-card .stars {
+  {% comment %} color: #ffca28; {% endcomment %}
+  color: #64B656;
+  font-size: 20px;
+}
+
+.testimonial-card .date {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.testimonial-card .content {
+  line-height: 1.6;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.testimonial-card .author {
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 1780px) {
+  .testimonial-container {
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 989px) {
+  .testimonial-container {
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 18px;
+  }
+
+  .testimonial-header {
+    flex: 1;
+    gap: 10px;
+  }
+
+  .testimonial-slider {
+    flex: 1 1 auto;
+    overflow-x: auto;
+  }
+
+  /* ✅ Final version: scrolls perfectly and adapts */
+  .testimonial-card {
+    flex: 0 0 auto;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 18px;
+  }
+
+  .testimonial-header {
+    flex: 1;
+    gap: 10px;
+  }
+
+  .testimonial-slider {
+    flex: 1 1 auto;
+    overflow-x: auto;
+  }
+
+  /* ✅ Slides now max 300px wide, scroll perfectly */
+  .testimonial-card {
+    flex: 0 0 auto;
+    min-width: 200px;
+    max-width: 300px;
+  }
+}
+
+</style>
+ 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const slider = document.querySelector(".testimonial-slider");
+  const cards = document.querySelectorAll(".testimonial-card");
+  const next = document.querySelector(".arrow.next");
+  const prev = document.querySelector(".arrow.prev");
+  const progress = document.querySelector(".progress");
+
+  if (!slider || cards.length === 0) return;
+
+  const cardWidth = cards[0].offsetWidth + 20;
+
+  // --- Mouse drag scroll (desktop only) ---
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  let isDragging = false;
+
+  slider.addEventListener('mousedown', (e) => {
+    if (e.button !== 0) return; // only left-click
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    isDragging = false;
+    slider.classList.remove('dragging');
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    setTimeout(() => (isDragging = false), 50);
+    slider.classList.remove('dragging');
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    if (Math.abs(walk) > 5) {
+      isDragging = true;
+      slider.classList.add('dragging');
+      slider.scrollLeft = scrollLeft - walk;
+    }
+  });
+
+  // --- Prevent click on cards when dragging ---
+  slider.querySelectorAll('.testimonial-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (isDragging) e.preventDefault();
+    });
+  });
+
+  // --- Touch scroll is handled natively, no need for JS ---
+
+  // --- Progress bar update ---
+  function updateProgress() {
+    const maxScroll = slider.scrollWidth - slider.clientWidth;
+    const scrollPercent = (slider.scrollLeft / maxScroll) * 100;
+    progress.style.width = `${Math.min(scrollPercent, 100)}%`;
+  }
+
+  next.addEventListener("click", () => {
+    slider.scrollBy({ left: cardWidth, behavior: "smooth" });
+  });
+
+  prev.addEventListener("click", () => {
+    slider.scrollBy({ left: -cardWidth, behavior: "smooth" });
+  });
+
+  slider.addEventListener("scroll", updateProgress);
+  updateProgress();
+});
+</script>
+
+ 
+{% schema %}
+{
+  "name": "Testimonial Slider",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Author name"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Testimonial text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Slider",
+      "category": "Testimonials"
+    }
+  ]
+}
+{% endschema %}

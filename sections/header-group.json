@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement_bar_Vh4wiG": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_xYTwtf": {
+          "type": "announcement",
+          "settings": {
+            "text": "Made in USA | lifetime warranty | field tested 6 years",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_xYTwtf"
+      ],
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "enable_marquee": false,
+        "uppercase_text": true,
+        "navigation_mode": "arrows",
+        "divider_icon": "circle",
+        "marquee_speed": 5,
+        "color_scheme": "scheme-eaa5462a-0831-42d8-aa25-e77573a23a78",
+        "show_line_separator": true,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "show_social": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "mobile_logo_position": "center",
+        "menu": "header-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "always",
+        "show_line_separator": false,
+        "color_scheme": "scheme-3",
+        "menu_color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "enable_customer_avatar": true,
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 7
+      }
+    }
+  },
+  "order": [
+    "announcement_bar_Vh4wiG",
+    "header"
+  ]
+}

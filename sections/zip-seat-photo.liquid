@@ -1,0 +1,427 @@
+{%- if section.settings.enable_mobile_carousel and section.blocks.size > 1 -%}
+  {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- style -%}
+     .photo-link{
+       color: rgb(var(--color-foreground));
+       letter-spacing: 0;
+       font-size: 20px;
+       font-weight: 500;
+       text-underline-offset: 5px;
+       text-transform: uppercase;
+       transition: color .2s ease;
+     }
+     .photo-link:hover{
+     color: #64B656
+    }
+
+       .section-{{ section.id }}-padding {
+         padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+         padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+         --zip-seat-photo-border-radius: {{ section.settings.border_radius }}px;
+       }
+
+       @media screen and (min-width: 750px) {
+         .section-{{ section.id }}-padding {
+           padding-top: {{ section.settings.padding_top }}px;
+           padding-bottom: {{ section.settings.padding_bottom }}px;
+         }
+       }
+
+       #zip-seat-photo-{{ section.id }} .zip-seat-photo-item-image--square {
+         aspect-ratio: 1;
+       }
+
+       #zip-seat-photo-{{ section.id }} .zip-seat-photo-item-image--portrait {
+         aspect-ratio: 0.8;
+       }
+
+       #zip-seat-photo-{{ section.id }} .zip-seat-photo-item-image--square img,
+       #zip-seat-photo-{{ section.id }} .zip-seat-photo-item-image--portrait img {
+         height: 100%;
+         object-fit: cover;
+       }
+
+       #zip-seat-photo-{{ section.id }} .zip-seat-photo-wrap {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+       }
+         #zip-seat-photo-{{ section.id }} .image-with-text__heading{
+         font-size:50px;
+         line-height: 65px;
+         letter-spacing: 0;
+         font-weight: 600;
+         max-width: 550px;
+       }
+
+       .zip-seat-wrap .list-social__item{
+        padding: .5rem;
+       }
+       @media (min-width: 1440px) and (max-width: 1600px){
+          #zip-seat-photo-{{ section.id }} .mage-with-text__heading{
+            font-size: 40px !important;
+         }
+         .photo-link {
+           font-size: 18px;
+         }
+       }
+         @media screen and (max-width: 1440px){
+         #zip-seat-photo-{{ section.id }} .image-with-text__heading{
+           font-size: 36px;
+           line-height: 46px;
+           max-width: 35rem;
+         }
+       }
+        @media screen and (max-width: 989px) {
+        #zip-seat-photo-{{ section.id }} .image-with-text__heading {
+         font-size: 30px;
+          line-height: 36px;
+            max-width: 30rem;
+       }
+         .photo-link{
+           font-size: 16px !important;
+
+         }
+     }
+     @media (min-width: 1200px) and (max-width: 1400px){
+          .photo-link{
+           font-size: 16px;
+
+         }
+     }
+       @media screen and (max-width: 749px) {
+         .zip-seat-top{
+            margin-bottom: 28px;
+
+         }
+         #zip-seat-photo-{{ section.id }} .image-with-text__heading{
+           line-height: 36px;
+
+         }
+         .photo-link{
+           font-size: 14px;
+
+         }
+         #zip-seat-photo-{{ section.id }} .zip-seat-photo-wrap.slider--mobile {
+           display: flex;
+           flex-wrap: nowrap;
+           grid-template-columns: none;
+
+         }
+
+         #zip-seat-photo-{{ section.id }} .zip-seat-photo-wrap.slider--mobile .zip-seat-photo-item {
+           flex: 0 0 85%;
+           width: 85%;
+         }
+
+         #zip-seat-photo-{{ section.id }} .zip-seat-photo-slider .slider-buttons {
+           position: absolute;
+           top: 50%;
+           right: 0;
+           left: 0;
+           z-index: 2;
+           justify-content: space-between;
+           padding: 0 0.5rem;
+           pointer-events: none;
+           transform: translateY(-50%);
+         }
+
+         #zip-seat-photo-{{ section.id }} .zip-seat-photo-slider .slider-button   {
+           border-radius: 50%;
+           background: #ffffff;
+           pointer-events: auto;
+           transition: background-color 0.2s ease, color 0.2s ease;
+         }
+
+         /* #zip-seat-photo-{{ section.id }} .zip-seat-photo-slider .slider-button:not([disabled]):hover {
+           background-color: #64B656;
+           color: #fff;
+         } */
+           #zip-seat-photo-{{ section.id }} .zip-seat-photo-slider .slider-button .svg-wrapper{
+              color: #fff;
+           }
+       }
+          @media screen and (max-width: 449px) {
+          #zip-seat-photo-{{ section.id }} .image-with-text__heading{
+           line-height: 36px;
+
+         }
+         .section-{{ section.id }}-padding {
+           padding: 50px 0;
+         }
+         }
+         .image-with-text__heading  strong{
+    color: #397D32 !important;
+  }
+{%- endstyle -%}
+
+<section
+  id="zip-seat-photo-{{ section.id }}"
+  class="image-text-section color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"
+>
+  <div class="zip-seat-wrap page-width">
+    <div class="zip-seat-top">
+      {% if section.settings.title != blank %}
+        <h2 class="image-with-text__heading inline-richtext h1">{{ section.settings.title }}</h2>
+      {% endif %}
+      {%- if section.settings.button_label != blank %}
+        <a
+          {% if section.settings.button_link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.button_link }}"
+          {% endif %}
+          class="{% if section.settings.button_display == 'link' %} photo-link {% else %}button{% endif %}"
+        >
+          {{ section.settings.button_label | escape }}
+        </a>
+      {%- endif -%}
+    </div>
+    {%- if section.settings.enable_mobile_carousel and section.blocks.size > 1 -%}
+      <slider-component class="zip-seat-photo-slider">
+    {%- endif -%}
+    {%- capture image_sizes -%}
+      (min-width: 1200px) 25vw, (min-width: 990px) 33vw, (min-width: 750px) 50vw,
+      {% if section.settings.enable_mobile_carousel and section.blocks.size > 1 %}85vw{% else %}calc(100vw - 30px){% endif %}
+    {%- endcapture -%}
+    <ul
+      {% if section.settings.enable_mobile_carousel and section.blocks.size > 1 %}
+        id="Slider-{{ section.id }}"
+        class="zip-seat-photo-wrap slider slider--mobile"
+      {% else %}
+        class="zip-seat-photo-wrap"
+      {% endif %}
+      role="list"
+      aria-label="{{ 'general.slider.name' | t }}"
+    >
+      {% for block in section.blocks %}
+        <li
+          {% if section.settings.enable_mobile_carousel and section.blocks.size > 1 %}
+            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            class="zip-seat-photo-item slider__slide"
+          {% else %}
+            class="zip-seat-photo-item"
+          {% endif %}
+          {{ block.shopify_attributes }}
+        >
+          <div class="zip-seat-photo-item-image{% if section.settings.image_ratio != 'adapt' %} zip-seat-photo-item-image--{{ section.settings.image_ratio }}{% endif %}">
+            {% if block.settings.image != blank %}
+              {{
+                block.settings.image
+                | image_url: width: 800
+                | image_tag:
+                  alt: block.settings.title,
+                  widths: '165, 240, 300, 400',
+                  sizes: image_sizes,
+                  loading: 'lazy'
+              }}
+            {% endif %}
+          </div>
+          <div class="zip-seat-photo-item-info">
+            <h3>{{ block.settings.title }}</h3>
+            <div class="zip-seat-photo-item-info_heading">{{ block.settings.text }}</div>
+            {%- if section.settings.show_social_icons -%}
+              {%- render 'social-icons', class: 'footer__list-social' -%}
+            {%- endif -%}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    {%- if section.settings.enable_mobile_carousel and section.blocks.size > 1 -%}
+      <div class="slider-buttons">
+        <button
+          type="button"
+          class="slider-button slider-button--prev slider-buttons-zip-seat-photo"
+          name="previous"
+          aria-label="{{ 'general.slider.previous_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <span class="svg-wrapper">
+            {{- 'icons-left-filled.svg' | inline_asset_content -}}
+          </span>
+        </button>
+        <button
+          type="button"
+          class="slider-button slider-button--next slider-buttons-zip-seat-photo"
+          name="next"
+          aria-label="{{ 'general.slider.next_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          <span class="svg-wrapper">
+            {{- 'icons-right-filled.svg' | inline_asset_content -}}
+          </span>
+        </button>
+      </div>
+      </slider-component>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "zip-seat-photo",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 12,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "t:sections.collection-list.settings.title.default",
+      "label": "t:sections.collection-list.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "t:sections.multirow.blocks.row.settings.button_label.default",
+      "label": "t:sections.multirow.blocks.row.settings.button_label.label",
+      "info": "t:sections.multirow.blocks.row.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.multirow.blocks.row.settings.button_link.label"
+    },
+    {
+      "type": "select",
+      "id": "button_display",
+      "label": "CTA display",
+      "options": [
+        {
+          "value": "button",
+          "label": "Button"
+        },
+        {
+          "value": "link",
+          "label": "Link"
+        }
+      ],
+      "default": "button"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "t:sections.featured-collection.settings.image_ratio.label",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_icons",
+      "label": "Show social icons",
+      "info": "Display social icons when hovering over the images.",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_mobile_carousel",
+      "label": "Enable mobile image carousel",
+      "info": "Show the images as a carousel on mobile devices.",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Image card border radius",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_picker",
+      "name": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "default": "t:sections.collection-list.settings.title.default",
+          "label": "t:sections.collection-list.settings.title.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "t:sections.collection-list.settings.title.default",
+          "label": "t:sections.collection-list.settings.title.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "zip-seat-photo",
+      "category": "Custom Sections",
+      "blocks": [
+        {
+          "type": "image_picker"
+        },
+        {
+          "type": "image_picker"
+        },
+        {
+          "type": "image_picker"
+        },
+        {
+          "type": "image_picker"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

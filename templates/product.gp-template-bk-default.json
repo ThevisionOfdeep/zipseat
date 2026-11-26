@@ -1,0 +1,320 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "order": [
+    "main",
+    "related-products",
+    "multicolumn_9bx6QE",
+    "collapsible_content_BhftMM",
+    "178741433781a7f2d1",
+    "17875918715319cec9"
+  ],
+  "sections": {
+    "178741433781a7f2d1": {
+      "block_order": [
+        "judge_me_reviews_review_widget_txAGwx"
+      ],
+      "blocks": {
+        "judge_me_reviews_review_widget_txAGwx": {
+          "settings": {
+            "empty_state": "other_products_reviews",
+            "max_width": 1200,
+            "review_data": "real_data",
+            "show_shop_reviews": false
+          },
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8"
+        }
+      },
+      "settings": {
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "include_margins": true,
+        "title": "Customer <em>Are Saying</em>"
+      },
+      "type": "apps"
+    },
+    "17875918715319cec9": {
+      "block_order": [
+        "judge_me_reviews_review_widget_KFGDjK"
+      ],
+      "blocks": {
+        "judge_me_reviews_review_widget_KFGDjK": {
+          "settings": {
+            "empty_state": "empty_widget",
+            "max_width": 1200,
+            "review_data": "sample_data",
+            "show_shop_reviews": false
+          },
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8"
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "include_margins": true,
+        "title": "Customer Are Saying"
+      },
+      "type": "apps"
+    },
+    "collapsible_content_BhftMM": {
+      "block_order": [
+        "collapsible_row_MdJ7fF",
+        "collapsible_row_TG4kHw",
+        "collapsible_row_GpjiHx",
+        "collapsible_row_B6kK4N",
+        "collapsible_row_JCHQKV",
+        "collapsible_row_mmxDn9"
+      ],
+      "blocks": {
+        "collapsible_row_B6kK4N": {
+          "settings": {
+            "heading": "Won’t an impact gun be more likely to strip the seats?",
+            "icon": "none",
+            "page": "",
+            "row_content": "<p>The impact gun encourages these bits to dig in and remove the seats without stripping them.</p>"
+          },
+          "type": "collapsible_row"
+        },
+        "collapsible_row_GpjiHx": {
+          "settings": {
+            "heading": "Why shouldn’t I use an easy out?",
+            "icon": "none",
+            "page": "",
+            "row_content": "<p>Many professionals have used an easy out to remove frozen or stripped seats, which is a struggle in itself. When doing this, you are distributing huge amounts of torque through the valves and water pipes that your chances for breaking the pipes have increased a great deal. If they don’t break, they have certainly been compromised and may leak at the joints shortly after. It also expands the soft brass valve body, which the seats screw into. This means if you successfully remove the seats, the new seats may leak either right away or shortly later. Not to mention the struggle of going back to doing this with brute force rather than the effortless process with a powered gun and the Zip Seat Extractor. Better for your valve, your pipes, and your body.</p>"
+          },
+          "type": "collapsible_row"
+        },
+        "collapsible_row_JCHQKV": {
+          "settings": {
+            "heading": "Won't it break my pipes?",
+            "icon": "none",
+            "page": "",
+            "row_content": "<p>Depending on how well the valve is secured as well as condition and type of tubing connected to the Symmons valve, will determine the level of torque it can handle. Again, when used with an impact gun, the torque gets delivered to the point of contact rather than distributed throughout the valve and piping giving you the best chances possible to not damage the piping connected to the valve. To this point we have NEVER damaged piping while using the Zip Seat Extractor. Like with any tool, we expect the user to exhibit discretion and finesse as needed.</p>"
+          },
+          "type": "collapsible_row"
+        },
+        "collapsible_row_MdJ7fF": {
+          "settings": {
+            "heading": "Why is the Zip Seat Extractor more expensive than the other hand tools?",
+            "icon": "none",
+            "page": "",
+            "row_content": "<p>We spent so much time, effort and energy working on bringing you the finest quality tool money can buy. We’ve taken a task that everyone struggled with completely by hand (usually unsuccessfully) and turned it into an easy to use powered tool task that’s successful every time. Our tool is made with the highest grade of hardened steel that can handle the torque of a heavy duty impact gun. Protected with a black oxide coating, which identifies the tool as impact quality while preventing premature rust. Built with the tightest tolerances and precision that can only be found when “MADE IN THE USA”! Not made in China, Taiwan, or any other offshore manufacturers like other hand tools.</p><p>The kind of tool your grandfather would buy, and would still have in his toolbox today. The kind of tool that you buy once and is backed with a lifetime warranty. You’re not just buying a tool set that consists of 4 separate seat wrenches, for 4 different seats. You’re buying a system that will work as good on the 100th time removing the seats as it did the first time. The sharp edges, which is key to removing the seats (especially stripped ones) will be as sharp 10 years from now as they are today.</p><p>If your tools serve you to make money, it’s a 1 time investment that pays itself off on your very first job. You’ll never say “I wish I didn’t spend that money”. For you business owners, it’s a tax write off. But most importantly, this tool is designed to make your life easier which is priceless.</p>"
+          },
+          "type": "collapsible_row"
+        },
+        "collapsible_row_TG4kHw": {
+          "settings": {
+            "heading": "Why not use the hand tools available to remove the seats?",
+            "icon": "none",
+            "page": "",
+            "row_content": "<p>First of all, all the hand tools are just that… hand tools. Most difficult tasks have already evolved by progressing from a hand tool to a power tool known as a paradigm shift. A handsaw to power saw, screwdriver to screw gun, hammer and nails to nail gun, and the list goes on. This evolution happens for the obvious reasons of saving time, effort, and energy. In many cases, you are completely unable to achieve the results you’re looking for with only a hand tool.</p><p>This is certainly the case when attempting to remove frozen seats from this exquisite valve. Not only is it difficult to remove them by hand but in most cases, it’s impossible. That’s why most professionals skip plan A (rebuilding the valve) and go right to Plan B (cutting it out and replacing it.) Before the Zip Seat Extractor Power Tool solution, there was no other option but to struggle with the hand tool and hope for the best.</p><p>The second reason you don’t want to use the hand tools available on the market is because they’re made off shore with low grade steel. These tools wear down quickly and round off the corners which end up stripping the seats most of the time. Once the seats are stripped, it’s game over. Your only option is to attempt to use an “EASY OUT” (see “Why shouldn’t I use an easy out.”)</p><p>And finally, in order to remove the seats with the hand tools available you must use a lot of leverage, which distributes torque throughout the soft brass seats, valve, as well as the water pipes tied into it behind the wall. All three of these things are now compromised. Even if successfully removing the seats while exerting the necessary pressure… The valve is compromised and the new seats may not sit right and could leak. In addition to this, the water pipe could break right off in the wall. Not to mention you have now weakened fittings and joints which could show up later as a flood.</p>"
+          },
+          "type": "collapsible_row"
+        },
+        "collapsible_row_mmxDn9": {
+          "settings": {
+            "heading": "Why shouldn’t I just cut the valve out?",
+            "icon": "none",
+            "page": "",
+            "row_content": "<p>One of the best things about the Symmons TempTrol valve is the ability to completely rebuild it to virtually a brand new valve, right from the face, without the need to damage the sheet rock, tile, tub surround, etc. Usually the only thing preventing a complete rebuild is the ability to remove the frozen seats, which is exactly what the Zip Seat Extractor was born for. There’s no longer the need to replace your Symmons valve, which comes with a lifetime warranty. In fact, you can completely change the look of your newly rebuilt Symmons valve with dozens of different face plates, handles, showerheads, and tub spout designs with different finishes.</p>"
+          },
+          "type": "collapsible_row"
+        }
+      },
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "Text": "<p>At Zipseat, we believe great products deserve equally great support. Whether you’re looking for guidance on installation, need help choosing the right tool, or simply want to understand how to get the best performance from your Zipseat product, our dedicated team is ready to assist. We take pride in offering quick, reliable, and personalized support so you can keep working without interruptions. Your satisfaction is our top priority, and we’re always here to ensure your experience with Zipseat is nothing short of exceptional.</p>",
+        "button_label": "View All",
+        "button_link": "shopify://pages/faqs",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "container_color_scheme": "",
+        "desktop_layout": "image_second",
+        "heading": "<strong>Have a question ?</strong> We are here to help.",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "layout": "none",
+        "open_first_collapsible_row": false,
+        "padding_bottom": 36,
+        "padding_top": 36
+      },
+      "type": "collapsible-content"
+    },
+    "main": {
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_nkXLpg",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "collapsible_tab_YYL8ff",
+        "share"
+      ],
+      "blocks": {
+        "buy_buttons": {
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          },
+          "type": "buy_buttons"
+        },
+        "collapsible_tab_YYL8ff": {
+          "settings": {
+            "content": "{{ product.description }}",
+            "heading": "Description",
+            "icon": "none",
+            "page": ""
+          },
+          "type": "collapsible_tab"
+        },
+        "judge_me_reviews_preview_badge_nkXLpg": {
+          "settings": {},
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8"
+        },
+        "price": {
+          "settings": {},
+          "type": "price"
+        },
+        "quantity_selector": {
+          "settings": {},
+          "type": "quantity_selector"
+        },
+        "share": {
+          "settings": {
+            "share_label": "Share"
+          },
+          "type": "share"
+        },
+        "title": {
+          "settings": {},
+          "type": "title"
+        },
+        "variant_picker": {
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          },
+          "type": "variant_picker"
+        },
+        "vendor": {
+          "settings": {
+            "text": "",
+            "text_style": "uppercase"
+          },
+          "type": "text"
+        }
+      },
+      "settings": {
+        "color_scheme": "scheme-3",
+        "constrain_to_viewport": true,
+        "enable_sticky_info": true,
+        "enable_video_looping": false,
+        "gallery_layout": "thumbnail_slider",
+        "hide_variants": true,
+        "image_zoom": "lightbox",
+        "media_fit": "contain",
+        "media_position": "left",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "padding_bottom": 12,
+        "padding_top": 36
+      },
+      "type": "main-product"
+    },
+    "multicolumn_9bx6QE": {
+      "block_order": [
+        "column_pddn6a",
+        "column_t3AG8Q",
+        "column_qih4Hj",
+        "column_7VEj4y"
+      ],
+      "blocks": {
+        "column_7VEj4y": {
+          "settings": {
+            "image": "shopify://shop_images/markets-new.svg",
+            "link": "",
+            "link_label": "",
+            "text": "<ul><li>Residential Plumbers</li><li>Property Managers</li><li>Facilities Maintenance</li><li>Hotel and Hospitality</li><li>Gyms and sport facilities</li><li>Corporate offices</li><li>DIY / Homeowners</li><li>Commercial accounts</li></ul>",
+            "title": "Markets"
+          },
+          "type": "column"
+        },
+        "column_pddn6a": {
+          "settings": {
+            "image": "shopify://shop_images/featured-new.svg",
+            "link": "",
+            "link_label": "",
+            "text": "<ul><li>Light and compact:<br/>1” x 2.75”<br/>153 kg (5.4 oz)</li><li>Materials:<br/>Hardened steel<br/>Black oxide coating</li><li>Patent pending</li><li>Free 1/4 socket adaptor included</li></ul>",
+            "title": "Features"
+          },
+          "type": "column"
+        },
+        "column_qih4Hj": {
+          "settings": {
+            "image": "shopify://shop_images/value-new.svg",
+            "link": "",
+            "link_label": "",
+            "text": "<ul><li>Major leap forward from a hand tool to a power tool!</li><li>Allows valves to be rebuilt without cutting the wall!</li><li>Saves time and effort!</li><li>If you’re a business owner, it’s a tax write off making these tools free.</li><li>Pays for itself the first time a replacement becomes a rebuild</li></ul>",
+            "title": "Value"
+          },
+          "type": "column"
+        },
+        "column_t3AG8Q": {
+          "settings": {
+            "image": "shopify://shop_images/design-new.svg",
+            "link": "",
+            "link_label": "",
+            "text": "<ul><li>2-in-1: Replace both hot and cold seats with one extractor</li><li>Evolve hexagon wrench design for current Symmons valves</li><li>Classic square key wrench design for legacy Symmons valves</li><li>Compatibility: Use in any impact driver, screw gun, or power drill</li></ul>",
+            "title": "Design"
+          },
+          "type": "column"
+        }
+      },
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "Custom_class": "steps_detail_wrap",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-17bef56c-7947-4b90-b616-2fa7a21be3b1",
+        "column_alignment": "left",
+        "columns_desktop": 2,
+        "columns_mobile": "2",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "image_width": "half",
+        "padding_bottom": 48,
+        "padding_top": 48,
+        "swipe_on_mobile": false,
+        "title": ""
+      },
+      "type": "multicolumn"
+    },
+    "related-products": {
+      "settings": {
+        "color_scheme": "scheme-3",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "padding_bottom": 28,
+        "padding_top": 36,
+        "products_to_show": 4,
+        "show_rating": false,
+        "show_secondary_image": true,
+        "show_vendor": false
+      },
+      "type": "related-products"
+    }
+  }
+}

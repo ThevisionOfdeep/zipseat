@@ -1,0 +1,119 @@
+{%style %}
+  .video-blocks-section .section-heading{
+    font-size: 50px;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 1600px){
+    .video-blocks-section .section-heading{
+      font-size: 40px;
+    }
+  }
+    @media screen and (max-width: 1440px){
+    .video-blocks-section .section-heading{
+      font-size: 36px;
+    }
+  }
+    @media screen and (max-width: 989px){
+    .video-blocks-section .section-heading{
+      font-size: 30px;
+    }
+  }
+   @media screen and (max-width: 449px){
+    .video-blocks-section .section-heading{
+      font-size: 25px;
+    }
+  }
+{% endstyle %}
+
+
+
+<section class="video-blocks-section color-{{ section.settings.color_scheme }}">
+  <div class="page-width " style="display: grid;">
+    {% if section.settings.heading != blank %}
+      <h2 class="section-heading h1">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="video-grid">
+      {% for block in section.blocks %}
+        {% if block.settings.video_url != blank %}
+          {% assign video_url = block.settings.video_url %}
+          {% assign embed_url = '' %}
+
+          {% if video_url contains 'youtube.com/watch?v=' %}
+            {% assign youtube_id = video_url | split: 'v=' | last | split: '&' | first %}
+            {% assign embed_url = 'https://www.youtube-nocookie.com-nocookie/embed/' | append: youtube_id %}
+          {% elsif video_url contains 'youtu.be/' %}
+            {% assign youtube_id = video_url | split: '.be/' | last | split: '?' | first %}
+            {% assign embed_url = 'https://www.youtube-nocookie.com/embed/' | append: youtube_id %}
+          {% elsif video_url contains 'vimeo.com/' %}
+            {% assign vimeo_id = video_url | split: '/' | last | split: '?' | first %}
+            {% assign embed_url = 'https://player.vimeo.com/video/' | append: vimeo_id %}
+          {% endif %}
+
+          {% if embed_url != '' %}
+            <div class="video-block" {{ block.shopify_attributes }}>
+              <div class="video-wrapper">
+                <iframe
+                  src="{{ embed_url }}"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          {% endif %}
+        {% elsif block.settings.video != blank %}
+          <div class="video-block" {{ block.shopify_attributes }}>
+            {{ block.settings.video | video_tag: controls: true, autoplay: false, muted: false, loop: false }}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Video Grid",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Watch our videos"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_block",
+      "name": "Video Block",
+      "settings": [
+        {
+          "type": "url",
+          "id": "video_url",
+          "label": "YouTube or Vimeo URL",
+          "info": "Paste a YouTube or Vimeo link (e.g. https://youtu.be/xyz or https://vimeo.com/xyz)"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Upload video (optional)",
+          "info": "If provided, this will be used instead of a YouTube/Vimeo URL."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Grid",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,75 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "tabing_49qPcL": {
+      "type": "tabing",
+      "blocks": {
+        "tab_Am8Myt": {
+          "type": "tab",
+          "settings": {
+            "polices": "step-1",
+            "tab_title": "",
+            "tab_content": ""
+          }
+        },
+        "tab_NT6fqQ": {
+          "type": "tab",
+          "settings": {
+            "polices": "step-2",
+            "tab_title": "Step 2",
+            "tab_content": ""
+          }
+        },
+        "tab_KqgrmB": {
+          "type": "tab",
+          "settings": {
+            "polices": "step-3",
+            "tab_title": "Step 3",
+            "tab_content": ""
+          }
+        },
+        "tab_V7ViVj": {
+          "type": "tab",
+          "settings": {
+            "polices": "step-4",
+            "tab_title": "Step 4",
+            "tab_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_Am8Myt",
+        "tab_NT6fqQ",
+        "tab_KqgrmB",
+        "tab_V7ViVj"
+      ],
+      "name": "Tabination",
+      "settings": {
+        "title": "Seat Extractor <em><strong>Instructions</strong></em>",
+        "title_info": "",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "tabing_49qPcL"
+  ]
+}
