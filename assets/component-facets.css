@@ -115,6 +115,21 @@
   padding-right: 1rem;
 }
 
+.facet-filters__sort,
+.mobile-facets__sort .select__select {
+  background-color: #000000;
+  color: #FFFFFF;
+  color-scheme: light;
+   padding-inline: 8px;
+}
+
+.facet-filters__sort option,
+.mobile-facets__sort .select__select option {
+  background-color: #000000;
+  color: #FFFFFF;
+ 
+}
+
 .facet-filters__sort + .icon-caret {
   right: 0;
 }

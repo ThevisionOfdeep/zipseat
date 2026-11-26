@@ -12,9 +12,10 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "layout": "collage",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "layout": "grid",
         "show_image": true,
-        "image_height": "medium",
+        "image_height": "adapt",
         "show_date": true,
         "show_author": false,
         "padding_top": 36,

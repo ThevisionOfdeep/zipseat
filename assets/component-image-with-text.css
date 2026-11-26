@@ -125,9 +125,9 @@
   overflow: hidden !important;
 }
 
-.image-with-text .zip-diverter-instruction .global-media-settings {
+/* .image-with-text .zip-diverter-instruction .global-media-settings {
   overflow: visible !important;
-}
+} */
 
 .image-with-text .image-with-text__text-item > * {
   border-radius: var(--text-boxes-radius);
@@ -336,7 +336,7 @@
 
 @media screen and (min-width: 990px) {
   .image-with-text__content {
-    padding: 3rem 5rem 3rem;
+    padding: 0 3rem 5rem 3rem;
   }
   .zip-diverter-instruction .image-with-text__content {
     padding-right: 0;

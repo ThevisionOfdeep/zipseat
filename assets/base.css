@@ -4472,7 +4472,7 @@ h2.image-with-text__heading.inline-richtext.h1 {
   .zip-diverter-instruction .image-with-text__media-item {
     position: sticky;
     top: 40px;
-    margin-top: 40px
+    /* margin-top: 40px */
   }
 }
 
