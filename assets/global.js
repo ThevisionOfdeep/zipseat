@@ -244,6 +244,7 @@ class QuantityInput extends HTMLElement {
 
   onButtonClick(event) {
     event.preventDefault();
+    if (event.currentTarget.disabled) return;
     const previousValue = this.input.value;
 
     if (event.target.name === 'plus') {
@@ -264,10 +265,16 @@ class QuantityInput extends HTMLElement {
   }
 
   validateQtyRules() {
-    const value = parseInt(this.input.value);
-    if (this.input.min) {
+     const value = parseInt(this.input.value);
+    if (this.input.min || this.classList.contains('cart-quantity')) {
       const buttonMinus = this.querySelector(".quantity__button[name='minus']");
-      buttonMinus.classList.toggle('disabled', parseInt(value) <= parseInt(this.input.min));
+      const quantityMinimum = this.classList.contains('cart-quantity')
+        ? Math.max(1, parseInt(this.input.dataset.min) || 1)
+        : parseInt(this.input.min);
+      const isMinusDisabled = this.input.disabled || value <= quantityMinimum;
+
+      buttonMinus.disabled = isMinusDisabled;
+      buttonMinus.classList.toggle('disabled', isMinusDisabled);
     }
     if (this.input.max) {
       const max = parseInt(this.input.max);

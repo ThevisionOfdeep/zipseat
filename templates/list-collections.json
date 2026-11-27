@@ -12,11 +12,16 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Collections",
+        "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "collection_arrow_background": "#2f7e32",
+        "collection_arrow_color": "#ffffff",
+        "title": "<strong>Collections</strong>",
         "sort": "alphabetical",
         "image_ratio": "square",
-        "columns_desktop": 3,
-        "columns_mobile": "2"
+        "columns_desktop": 4,
+        "columns_mobile": "1"
       }
     }
   },

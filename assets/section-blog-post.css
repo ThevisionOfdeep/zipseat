@@ -181,6 +181,7 @@
     .article-template__title{
     font-size: 48px;
     font-weight: 600;
+    letter-spacing: 0;
   
   }
   @media screen and (max-width: 1600px){

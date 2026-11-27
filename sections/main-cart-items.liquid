@@ -241,7 +241,7 @@
                                 class="quantity__button"
                                 name="minus"
                                 type="button"
-                                {% if can_update_quantity == false %}
+                                 {% if can_update_quantity == false or item.quantity <= 1 %}
                                   disabled
                                 {% endif %}
                               >

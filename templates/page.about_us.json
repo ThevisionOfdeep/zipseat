@@ -12,6 +12,7 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "color_scheme": "",
         "padding_top": 28,
         "padding_bottom": 28
       }
@@ -135,7 +136,7 @@
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "scheme-0c681e25-ace4-44ac-9370-8d19c1e1def2",
-        "full_width": true,
+        "full_width": false,
         "padding_top": 20,
         "padding_bottom": 40
       }
